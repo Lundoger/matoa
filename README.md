@@ -8,4 +8,4 @@
 - Responsive adaptive
 - Swiper.js
 # Preview:
-[NFT-maketplace](https://nft-maketplace-lundoger.netlify.app/)
+[Matoa](https://matoa-lundoger.netlify.app/)
