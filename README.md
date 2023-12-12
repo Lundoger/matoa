@@ -7,5 +7,6 @@
 - GULP & WEBPACK
 - Responsive adaptive
 - Swiper.js
+- Gallery
 # Preview:
 [Matoa](https://matoa-lundoger.netlify.app/)
