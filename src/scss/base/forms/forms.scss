@@ -1,0 +1,57 @@
+//<FORM>
+// Сніппет (HTML):
+.form {
+	&__row {
+	}
+	&__column {
+	}
+	&__line {
+	}
+	&__input {
+	}
+	&__button {
+	}
+	&__error {
+		color: red;
+		font-weight: 700;
+		margin-top: rem(5);
+		padding-left: rem(5);
+	}
+}
+//</FORM>
+
+// <BUTTONS>
+// Сніппет (HTML): btn
+@import "button";
+
+// <INPUTS>
+// Сніппет (HTML): inp
+@import "input";
+
+// <CHECK>
+// Сніппет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Сніппет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Сніппет (HTML): sel
+// @import "select";
+
+// <RATING>
+// Сніппет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Сніппет (HTML): qa
+@import "quantity";
+
+// <RANGE>
+// Сніппет (HTML):
+// @import "range";
+
+// <CALENDAR>
+// Сніппет (HTML):
+// @import "datepicker";

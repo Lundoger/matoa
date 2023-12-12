@@ -1,0 +1,115 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.title {
+	font-family: "Taviraj";
+	font-weight: 500;
+	line-height: 1.11;
+	@include adaptiveValue("font-size", 36, 28);
+	letter-spacing: 0.02em;
+	color: $darkColor;
+	&::after {
+		content: "";
+		height: rem(1);
+		width: em(128, 36);
+		background-color: #000;
+		display: block;
+		margin-top: rem(8);
+	}
+	&--small {
+		&::after {
+			width: em(65, 36);
+		}
+	}
+	&--bold {
+		font-weight: 600;
+	}
+	&--white {
+		font-size: rem(24);
+		color: #fff;
+		&::after {
+			background-color: #fff;
+			margin-top: rem(10);
+		}
+	}
+}
+
+//============================================================================
+.label-footer {
+	font-weight: 500;
+	font-size: rem(20);
+	line-height: math.div(28, 20);
+	letter-spacing: 0.02em;
+}
+//============================================================================
+.form-search {
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__body {
+		display: flex;
+		gap: rem(15);
+		@media (min-width: $mobileSmall) {
+			align-items: flex-start;
+		}
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+		}
+	}
+
+	&__line {
+		flex: 1 1 100%;
+	}
+
+	&__input {
+		height: rem(50);
+		font-size: rem(20);
+	}
+
+	&__button {
+	}
+}
+//========================================================================================================================================================
+.breadcrumbs {
+	&__container {
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+	&__list {
+		font-family: "Taviraj";
+		display: flex;
+		align-items: center;
+		gap: rem(5);
+	}
+
+	&__item {
+		&:not(:last-child) {
+			display: flex;
+			align-items: center;
+			gap: rem(5);
+			&::after {
+				content: "/";
+				color: $darkColor;
+			}
+		}
+	}
+
+	&__link {
+		line-height: math.div(27 , 16);
+		letter-spacing: 0.02em;
+		color: $darkColor;
+		@media (any-hover: hover){
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__current {
+		line-height: math.div(27 , 16);
+		letter-spacing: 0.02em;
+		color: $orangeColor; 
+	}
+}
